@@ -1,0 +1,87 @@
+<!-- 未认证拦截弹窗 -->
+<div class="modal-overlay">
+  <div class="modal-container p-[24px]">
+    <div class="text-center">
+      <div class="w-[80px] h-[80px] bg-[#F3F4F6] rounded-full flex items-center justify-center mx-auto mb-[16px]">
+        <i class="fa fa-info-circle text-[#2563EB] text-[40px]"></i>
+      </div>
+      <h3 class="text-[18px] font-medium mb-[8px]">请先完成校园认证</h3>
+      <p class="text-[14px] text-[#4B5563] mb-[24px]">认证后可享受全部功能，包括兑换资料、发起交换和发布资料</p>
+      <div class="space-y-[12px]">
+        <button class="btn-primary" onclick="window.location.href='verify.html'">去认证</button>
+        <button class="btn-secondary modal-close">稍后再说</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 积分不足弹窗 -->
+<div class="modal-overlay">
+  <div class="modal-container p-[24px]">
+    <div class="text-center">
+      <div class="w-[80px] h-[80px] bg-[#FEE2E2] rounded-full flex items-center justify-center mx-auto mb-[16px]">
+        <i class="fa fa-exclamation-triangle text-[#EF4444] text-[40px]"></i>
+      </div>
+      <h3 class="text-[18px] font-medium mb-[8px]">积分不足</h3>
+      <p class="text-[14px] text-[#4B5563] mb-[24px]">您的积分不足以兑换此资料，请通过完成任务或发布资料获取更多积分</p>
+      <div class="space-y-[12px]">
+        <button class="btn-primary" onclick="window.location.href='task-center.html'">去赚积分</button>
+        <button class="btn-secondary modal-close">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 发起交换弹窗 -->
+<div class="modal-overlay">
+  <div class="modal-container p-[24px]">
+    <h3 class="text-[18px] font-medium mb-[16px]">发起交换</h3>
+    <div class="space-y-[12px]">
+      <div>
+        <label class="block text-[14px] text-[#4B5563] mb-[4px]">选择您的资料</label>
+        <select class="input">
+          <option>请选择您要交换的资料</option>
+          <option>高等数学下册</option>
+          <option>大学物理实验报告</option>
+          <option>计算机网络教材</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-[14px] text-[#4B5563] mb-[4px]">交换说明</label>
+        <textarea class="w-full max-w-[343px] h-[100px] rounded-[8px] bg-[#F3F4F6] px-[16px] py-[12px] text-[#4B5563] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-opacity-50 resize-none"></textarea>
+      </div>
+      <div class="space-y-[12px]">
+        <button class="btn-primary" onclick="window.location.href='exchange-manage.html'">提交交换请求</button>
+        <button class="btn-secondary modal-close">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 兑换成功弹窗 -->
+<div class="modal-overlay">
+  <div class="modal-container p-[24px]">
+    <div class="text-center">
+      <div class="w-[80px] h-[80px] bg-[#D1FAE5] rounded-full flex items-center justify-center mx-auto mb-[16px]">
+        <i class="fa fa-check-circle text-[#10B981] text-[40px]"></i>
+      </div>
+      <h3 class="text-[18px] font-medium mb-[8px]">兑换成功</h3>
+      <p class="text-[14px] text-[#4B5563] mb-[24px]">您已成功兑换该资料，可在"我的云资料"中查看</p>
+      <button class="btn-primary" onclick="window.location.href='my-materials.html'">查看我的资料</button>
+    </div>
+  </div>
+</div>
+
+<!-- 审核结果提示 -->
+<div class="modal-overlay">
+  <div class="modal-container p-[24px]">
+    <div class="text-center">
+      <div class="w-[80px] h-[80px] bg-[#D1FAE5] rounded-full flex items-center justify-center mx-auto mb-[16px]">
+        <i class="fa fa-check-circle text-[#10B981] text-[40px]"></i>
+      </div>
+      <h3 class="text-[18px] font-medium mb-[8px]">认证审核通过</h3>
+      <p class="text-[14px] text-[#4B5563] mb-[24px]">恭喜您已成功通过校园认证，现在可以享受全部功能</p>
+      <button class="btn-primary modal-close">确定</button>
+    </div>
+  </div>
+</div>

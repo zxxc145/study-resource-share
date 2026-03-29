@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 新人引导3</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen flex flex-col items-center justify-center px-[16px]">
+    <!-- 引导标题 -->
+    <h2 class="text-[24px] font-bold text-center mb-[32px]">完善个人信息</h2>
+    
+    <!-- 信息完善表单 -->
+    <div class="w-full max-w-[343px]">
+        <!-- 头像上传 -->
+        <div class="flex flex-col items-center mb-[24px]">
+            <div class="w-[80px] h-[80px] bg-white rounded-full overflow-hidden mb-[12px]">
+                <!-- 默认头像 -->
+                <div class="w-full h-full bg-[#F3F4F6] flex items-center justify-center">
+                    <i class="fa fa-user text-[40px] text-[#9CA3AF]"></i>
+                </div>
+            </div>
+            <button class="text-[#2563EB] text-[14px]">
+                上传头像
+            </button>
+        </div>
+        
+        <!-- 姓名输入 -->
+        <div class="mb-[16px]">
+            <label class="block text-[14px] text-[#4B5563] mb-[4px]">姓名</label>
+            <input type="text" placeholder="请输入您的真实姓名" class="input">
+        </div>
+        
+        <!-- 学号输入 -->
+        <div class="mb-[16px]">
+            <label class="block text-[14px] text-[#4B5563] mb-[4px]">学号</label>
+            <input type="text" placeholder="请输入您的学号" class="input">
+        </div>
+        
+        <!-- 学院选择 -->
+        <div class="mb-[16px]">
+            <label class="block text-[14px] text-[#4B5563] mb-[4px]">学院</label>
+            <select class="input">
+                <option>请选择您所在的学院</option>
+                <option>计算机科学与技术学院</option>
+                <option>电子工程学院</option>
+                <option>机械工程学院</option>
+                <option>经济管理学院</option>
+                <option>文学院</option>
+                <option>理学院</option>
+            </select>
+        </div>
+        
+        <!-- 年级选择 -->
+        <div class="mb-[24px]">
+            <label class="block text-[14px] text-[#4B5563] mb-[4px]">年级</label>
+            <select class="input">
+                <option>请选择您所在的年级</option>
+                <option>2020级</option>
+                <option>2021级</option>
+                <option>2022级</option>
+                <option>2023级</option>
+                <option>2024级</option>
+            </select>
+        </div>
+        
+        <!-- 完成按钮 -->
+        <button class="btn-primary" onclick="window.location.href='new-user-bonus.html'">
+            完成
+        </button>
+    </div>
+<!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

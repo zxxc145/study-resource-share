@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 未认证拦截弹窗</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div class="modal-overlay">
+        <div class="modal-container p-[24px]">
+            <div class="text-center">
+                <div class="w-[80px] h-[80px] bg-[#F3F4F6] rounded-full flex items-center justify-center mx-auto mb-[16px]">
+                    <i class="fa fa-info-circle text-[#2563EB] text-[40px]"></i>
+                </div>
+                <h3 class="text-[18px] font-medium mb-[8px]">请先完成校园认证</h3>
+                <p class="text-[14px] text-[#4B5563] mb-[24px]">认证后可享受全部功能，包括兑换资料、发起交换和发布资料</p>
+                <div class="space-y-[12px]">
+                    <button class="btn-primary" onclick="window.location.href='verify.html'">去认证</button>
+                    <button class="btn-secondary modal-close">稍后再说</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

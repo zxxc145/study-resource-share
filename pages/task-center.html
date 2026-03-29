@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 赚积分任务中心</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部导航栏 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center gap-[8px]">
+            <button class="back-btn">
+                <i class="fa fa-arrow-left text-[20px]"></i>
+            </button>
+            <h1 class="text-[18px] font-medium">赚积分任务中心</h1>
+        </div>
+        <button class="text-[#4B5563]">
+            <i class="fa fa-question-circle text-[20px]"></i>
+        </button>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[60px] container mx-auto px-[16px]">
+        <!-- 我的积分 -->
+        <div class="card mt-[16px]">
+            <div class="flex items-center justify-between">
+                <div>
+                    <div class="text-[12px] text-[#9CA3AF] mb-[4px]">我的积分</div>
+                    <div class="flex items-center">
+                        <i class="fa fa-coins text-[#F97316] mr-[4px]"></i>
+                        <span class="text-[24px] font-bold points-display">1250</span>
+                    </div>
+                </div>
+                <button class="px-[12px] py-[4px] bg-[#2563EB] text-white text-[12px] rounded-full">
+                    积分明细
+                </button>
+            </div>
+        </div>
+        
+        <!-- 任务分类 -->
+        <div class="mt-[24px]">
+            <h2 class="text-[18px] font-medium mb-[12px]">任务分类</h2>
+            <div class="grid grid-cols-2 gap-[12px]">
+                <!-- 任务分类项1 -->
+                <div class="card">
+                    <div class="w-full h-[80px] bg-[#EFF6FF] rounded-[8px] flex items-center justify-center mb-[8px]">
+                        <i class="fa fa-user-plus text-[#2563EB] text-[40px]"></i>
+                    </div>
+                    <h3 class="text-center text-[14px] font-medium">新手任务</h3>
+                </div>
+                
+                <!-- 任务分类项2 -->
+                <div class="card">
+                    <div class="w-full h-[80px] bg-[#D1FAE5] rounded-[8px] flex items-center justify-center mb-[8px]">
+                        <i class="fa fa-book text-[#10B981] text-[40px]"></i>
+                    </div>
+                    <h3 class="text-center text-[14px] font-medium">日常任务</h3>
+                </div>
+                
+                <!-- 任务分类项3 -->
+                <div class="card">
+                    <div class="w-full h-[80px] bg-[#FEF3C7] rounded-[8px] flex items-center justify-center mb-[8px]">
+                        <i class="fa fa-star text-[#F59E0B] text-[40px]"></i>
+                    </div>
+                    <h3 class="text-center text-[14px] font-medium">成就任务</h3>
+                </div>
+                
+                <!-- 任务分类项4 -->
+                <div class="card">
+                    <div class="w-full h-[80px] bg-[#FEE2E2] rounded-[8px] flex items-center justify-center mb-[8px]">
+                        <i class="fa fa-exchange-alt text-[#EF4444] text-[40px]"></i>
+                    </div>
+                    <h3 class="text-center text-[14px] font-medium">兑换任务</h3>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 推荐任务 -->
+        <div class="mt-[24px]">
+            <h2 class="text-[18px] font-medium mb-[12px]">推荐任务</h2>
+            <div class="space-y-[12px]">
+                <!-- 任务项1 -->
+                <div class="card">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[50px] h-[50px] bg-[#EFF6FF] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-id-card text-[#2563EB]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-[16px] font-medium mb-[4px]">完成校园认证</h3>
+                            <p class="text-[12px] text-[#9CA3AF]">认证后可享受全部功能</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-[12px] text-[#10B981] mb-[4px]">
+                                <i class="fa fa-coins mr-[4px]"></i>500积分
+                            </div>
+                            <button class="px-[12px] py-[4px] bg-[#2563EB] text-white text-[12px] rounded-full">
+                                去完成
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 任务项2 -->
+                <div class="card">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[50px] h-[50px] bg-[#D1FAE5] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-book text-[#10B981]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-[16px] font-medium mb-[4px]">上传学习资料</h3>
+                            <p class="text-[12px] text-[#9CA3AF]">上传一份学习资料并审核通过</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-[12px] text-[#10B981] mb-[4px]">
+                                <i class="fa fa-coins mr-[4px]"></i>200积分
+                            </div>
+                            <button class="px-[12px] py-[4px] bg-[#2563EB] text-white text-[12px] rounded-full">
+                                去完成
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 任务项3 -->
+                <div class="card">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[50px] h-[50px] bg-[#FEF3C7] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-share-alt text-[#F59E0B]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-[16px] font-medium mb-[4px]">邀请好友</h3>
+                            <p class="text-[12px] text-[#9CA3AF]">邀请好友注册并完成认证</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-[12px] text-[#10B981] mb-[4px]">
+                                <i class="fa fa-coins mr-[4px]"></i>300积分/人
+                            </div>
+                            <button class="px-[12px] py-[4px] bg-[#2563EB] text-white text-[12px] rounded-full">
+                                去邀请
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 日常任务 -->
+        <div class="mt-[24px]">
+            <h2 class="text-[18px] font-medium mb-[12px]">日常任务</h2>
+            <div class="space-y-[12px]">
+                <!-- 日常任务项1 -->
+                <div class="card">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[50px] h-[50px] bg-[#FEE2E2] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-sign-in-alt text-[#EF4444]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-[16px] font-medium mb-[4px]">每日签到</h3>
+                            <p class="text-[12px] text-[#9CA3AF]">连续签到可获得额外奖励</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-[12px] text-[#10B981] mb-[4px]">
+                                <i class="fa fa-coins mr-[4px]"></i>10-50积分
+                            </div>
+                            <button class="px-[12px] py-[4px] bg-[#10B981] text-white text-[12px] rounded-full">
+                                已完成
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 日常任务项2 -->
+                <div class="card">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[50px] h-[50px] bg-[#F3E8FF] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-search text-[#8B5CF6]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-[16px] font-medium mb-[4px]">浏览学习资料</h3>
+                            <p class="text-[12px] text-[#9CA3AF]">浏览10份学习资料</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-[12px] text-[#10B981] mb-[4px]">
+                                <i class="fa fa-coins mr-[4px]"></i>5积分
+                            </div>
+                            <button class="px-[12px] py-[4px] bg-[#F3F4F6] text-[#4B5563] text-[12px] rounded-full">
+                                未完成
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部Tab栏 -->
+    <footer>
+        <div class="tabbar">
+            <!-- 首页 -->
+            <div class="tabbar-item inactive" data-page="home">
+                <i class="fa fa-home text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">首页</span>
+            </div>
+            
+            <!-- 找资料 -->
+            <div class="tabbar-item inactive" data-page="search">
+                <i class="fa fa-search text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">找资料</span>
+            </div>
+            
+            <!-- 互助 -->
+            <div class="tabbar-item inactive" data-page="exchange">
+                <i class="fa fa-exchange-alt text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">互助</span>
+            </div>
+            
+            <!-- 备考 -->
+            <div class="tabbar-item inactive" data-page="exam">
+                <i class="fa fa-pen-fancy text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">备考</span>
+            </div>
+            
+            <!-- 我的 -->
+            <div class="tabbar-item active" data-page="profile">
+                <i class="fa fa-user text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">我的</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

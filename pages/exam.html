@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 备考</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部导航栏 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center gap-[8px]">
+            <button class="back-btn">
+                <i class="fa fa-arrow-left text-[20px]"></i>
+            </button>
+            <h1 class="text-[18px] font-medium">备考专区</h1>
+        </div>
+        <button class="text-[#4B5563]">
+            <i class="fa fa-search text-[20px]"></i>
+        </button>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[60px] container mx-auto px-[16px]">
+        <!-- 考前应急专区卡片 -->
+        <div class="card mt-[16px]">
+            <div class="flex items-center justify-between mb-[12px]">
+                <div class="flex items-center gap-[8px]">
+                    <div class="w-[32px] h-[32px] bg-[#FEE2E2] rounded-full flex items-center justify-center">
+                        <i class="fa fa-clock text-[#EF4444]"></i>
+                    </div>
+                    <h2 class="text-[16px] font-medium">考前应急专区</h2>
+                </div>
+                <button class="text-[#2563EB] text-[14px]">查看更多</button>
+            </div>
+            <div class="w-full h-[120px] bg-[#FEE2E2] rounded-[8px] flex items-center justify-center">
+                <span class="text-[#DC2626] text-[16px]">期末考试突击包</span>
+            </div>
+        </div>
+
+        <!-- 学习套餐模块 -->
+        <div class="mt-[24px]">
+            <div class="flex items-center justify-between mb-[12px]">
+                <h2 class="text-[18px] font-medium">热门备考套餐</h2>
+                <button class="text-[#2563EB] text-[14px]">查看更多</button>
+            </div>
+            <div class="grid grid-cols-2 gap-[12px]">
+                <!-- 套餐卡片 -->
+                <div class="card">
+                    <div class="w-full h-[100px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                    <h3 class="text-[16px] font-medium mb-[4px]">计算机考研套餐</h3>
+                    <p class="text-[12px] text-[#9CA3AF] mb-[8px]">包含15本专业教材</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-book text-[#2563EB]"></i>
+                            <span class="text-[12px] text-[#4B5563]">15本</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-coins text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">1299积分</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 套餐卡片 -->
+                <div class="card">
+                    <div class="w-full h-[100px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                    <h3 class="text-[16px] font-medium mb-[4px]">英语四六级套餐</h3>
+                    <p class="text-[12px] text-[#9CA3AF] mb-[8px]">包含8本学习资料</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-book text-[#2563EB]"></i>
+                            <span class="text-[12px] text-[#4B5563]">8本</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-coins text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">799积分</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 套餐卡片 -->
+                <div class="card">
+                    <div class="w-full h-[100px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                    <h3 class="text-[16px] font-medium mb-[4px]">公务员考试套餐</h3>
+                    <p class="text-[12px] text-[#9CA3AF] mb-[8px]">包含12本备考资料</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-book text-[#2563EB]"></i>
+                            <span class="text-[12px] text-[#4B5563]">12本</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-coins text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">999积分</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 套餐卡片 -->
+                <div class="card">
+                    <div class="w-full h-[100px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                    <h3 class="text-[16px] font-medium mb-[4px]">研究生复试套餐</h3>
+                    <p class="text-[12px] text-[#9CA3AF] mb-[8px]">包含6本复试资料</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-book text-[#2563EB]"></i>
+                            <span class="text-[12px] text-[#4B5563]">6本</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-coins text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">599积分</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 历年真题模块 -->
+        <div class="mt-[24px]">
+            <div class="flex items-center justify-between mb-[12px]">
+                <h2 class="text-[18px] font-medium">历年考试真题</h2>
+                <button class="text-[#2563EB] text-[14px]">查看更多</button>
+            </div>
+            <div class="space-y-[12px]">
+                <!-- 真题卡片 -->
+                <div class="card">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[60px] h-[60px] bg-[#F3F4F6] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-file-alt text-[#2563EB] text-[24px]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-[16px] font-medium mb-[4px]">2023年大学英语四级考试真题</h3>
+                            <p class="text-[12px] text-[#9CA3AF] mb-[8px]">包含听力、阅读、写作部分</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-[4px]">
+                                    <i class="fa fa-coins text-[#F97316]"></i>
+                                    <span class="text-[12px] text-[#4B5563]">89积分</span>
+                                </div>
+                                <button class="exchange-btn" data-points="89">立即兑换</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 真题卡片 -->
+                <div class="card">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[60px] h-[60px] bg-[#F3F4F6] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-file-alt text-[#2563EB] text-[24px]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-[16px] font-medium mb-[4px]">2023年高等数学期末考试真题</h3>
+                            <p class="text-[12px] text-[#9CA3AF] mb-[8px]">包含解答题和证明题</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-[4px]">
+                                    <i class="fa fa-coins text-[#F97316]"></i>
+                                    <span class="text-[12px] text-[#4B5563]">119积分</span>
+                                </div>
+                                <button class="exchange-btn" data-points="119">立即兑换</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 备考攻略模块 -->
+        <div class="mt-[24px]">
+            <div class="flex items-center justify-between mb-[12px]">
+                <h2 class="text-[18px] font-medium">备考攻略</h2>
+                <button class="text-[#2563EB] text-[14px]">查看更多</button>
+            </div>
+            <div class="space-y-[12px]">
+                <!-- 攻略卡片 -->
+                <div class="card">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[60px] h-[60px] bg-[#D1FAE5] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-lightbulb text-[#10B981] text-[24px]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-[16px] font-medium mb-[4px]">考研数学高效复习方法</h3>
+                            <p class="text-[12px] text-[#9CA3AF] mb-[8px]">作者：张三 | 发布于 2023-11-01</p>
+                            <div class="flex items-center gap-[16px]">
+                                <div class="flex items-center gap-[4px]">
+                                    <i class="fa fa-eye text-[#9CA3AF]"></i>
+                                    <span class="text-[12px] text-[#9CA3AF]">1256次</span>
+                                </div>
+                                <div class="flex items-center gap-[4px]">
+                                    <i class="fa fa-heart text-[#EF4444]"></i>
+                                    <span class="text-[12px] text-[#9CA3AF]">89次</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 攻略卡片 -->
+                <div class="card">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[60px] h-[60px] bg-[#D1FAE5] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-lightbulb text-[#10B981] text-[24px]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-[16px] font-medium mb-[4px]">英语六级听力提高技巧</h3>
+                            <p class="text-[12px] text-[#9CA3AF] mb-[8px]">作者：李四 | 发布于 2023-10-25</p>
+                            <div class="flex items-center gap-[16px]">
+                                <div class="flex items-center gap-[4px]">
+                                    <i class="fa fa-eye text-[#9CA3AF]"></i>
+                                    <span class="text-[12px] text-[#9CA3AF]">987次</span>
+                                </div>
+                                <div class="flex items-center gap-[4px]">
+                                    <i class="fa fa-heart text-[#EF4444]"></i>
+                                    <span class="text-[12px] text-[#9CA3AF]">67次</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部Tab栏 -->
+    <footer>
+        <div class="tabbar">
+            <!-- 首页 -->
+            <div class="tabbar-item inactive" data-page="home">
+                <i class="fa fa-home text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">首页</span>
+            </div>
+            
+            <!-- 找资料 -->
+            <div class="tabbar-item inactive" data-page="search">
+                <i class="fa fa-search text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">找资料</span>
+            </div>
+            
+            <!-- 互助 -->
+            <div class="tabbar-item inactive" data-page="exchange">
+                <i class="fa fa-exchange-alt text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">互助</span>
+            </div>
+            
+            <!-- 备考 -->
+            <div class="tabbar-item active" data-page="exam">
+                <i class="fa fa-pen-fancy text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">备考</span>
+            </div>
+            
+            <!-- 我的 -->
+            <div class="tabbar-item inactive" data-page="profile">
+                <i class="fa fa-user text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">我的</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

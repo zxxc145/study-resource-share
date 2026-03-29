@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 资料上传</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部导航栏 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center gap-[8px]">
+            <button class="back-btn">
+                <i class="fa fa-arrow-left text-[20px]"></i>
+            </button>
+            <h1 class="text-[18px] font-medium">上传学习资料</h1>
+        </div>
+        <button class="text-[#2563EB] text-[16px] font-medium">发布</button>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[60px] container mx-auto px-[16px]">
+        <!-- 资料封面上传 -->
+        <div class="card mt-[16px]">
+            <div class="flex flex-col items-center">
+                <div class="w-full h-[150px] bg-[#F3F4F6] rounded-[8px] mb-[12px] flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fa fa-cloud-upload-alt text-[#9CA3AF] text-[40px] mb-[8px]"></i>
+                        <p class="text-[12px] text-[#9CA3AF]">点击上传封面图</p>
+                        <p class="text-[10px] text-[#9CA3AF]">支持 PNG、JPG 格式，不超过 2MB</p>
+                    </div>
+                </div>
+                <button class="text-[#2563EB] text-[14px]">
+                    选择图片
+                </button>
+            </div>
+        </div>
+        
+        <!-- 资料信息填写 -->
+        <div class="space-y-[16px] mt-[16px]">
+            <!-- 资料标题 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">资料标题</label>
+                <input type="text" placeholder="请输入资料标题" class="input">
+            </div>
+            
+            <!-- 资料分类 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">资料分类</label>
+                <select class="input">
+                    <option>请选择资料分类</option>
+                    <option>教材课本</option>
+                    <option>复习资料</option>
+                    <option>历年真题</option>
+                    <option>笔记总结</option>
+                    <option>课件PPT</option>
+                    <option>实验报告</option>
+                </select>
+            </div>
+            
+            <!-- 所属学科 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">所属学科</label>
+                <select class="input">
+                    <option>请选择所属学科</option>
+                    <option>计算机科学与技术</option>
+                    <option>数学</option>
+                    <option>英语</option>
+                    <option>物理</option>
+                    <option>化学</option>
+                    <option>生物</option>
+                    <option>历史</option>
+                    <option>政治</option>
+                </select>
+            </div>
+            
+            <!-- 资料简介 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">资料简介</label>
+                <textarea placeholder="请输入资料简介" class="w-full max-w-[343px] h-[100px] rounded-[8px] bg-[#F3F4F6] px-[16px] py-[12px] text-[#4B5563] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-opacity-50 resize-none"></textarea>
+            </div>
+            
+            <!-- 资料文件上传 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">资料文件</label>
+                <div class="w-full max-w-[343px] h-[80px] bg-[#F3F4F6] rounded-[8px] flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fa fa-file-alt text-[#9CA3AF] text-[32px] mb-[8px]"></i>
+                        <p class="text-[12px] text-[#9CA3AF]">点击上传资料文件</p>
+                        <p class="text-[10px] text-[#9CA3AF]">支持 PDF、DOC、PPT 格式，不超过 50MB</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 积分设置 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">积分设置</label>
+                <div class="flex items-center gap-[8px]">
+                    <div class="relative flex-1">
+                        <input type="number" placeholder="0" class="input">
+                        <span class="absolute right-[16px] top-1/2 transform -translate-y-1/2 text-[#9CA3AF]">积分</span>
+                    </div>
+                    <div class="flex items-center gap-[4px]">
+                        <input type="checkbox" id="free" class="w-[20px] h-[20px] rounded-[4px] border border-[#D1D5DB] focus:ring-[#2563EB]">
+                        <label for="free" class="text-[14px] text-[#4B5563]">免费分享</label>
+                    </div>
+                </div>
+                <p class="text-[12px] text-[#EF4444] mt-[4px]">* 上传资料并通过审核后，你将获得50-200积分奖励</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

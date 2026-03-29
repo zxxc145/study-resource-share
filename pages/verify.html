@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 校园认证</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部导航栏 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center gap-[8px]">
+            <button class="back-btn">
+                <i class="fa fa-arrow-left text-[20px]"></i>
+            </button>
+            <h1 class="text-[18px] font-medium">校园认证</h1>
+        </div>
+        <button class="text-[#2563EB] text-[16px] font-medium">提交</button>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[60px] container mx-auto px-[16px]">
+        <!-- 认证说明 -->
+        <div class="card mt-[16px]">
+            <div class="flex items-center gap-[12px]">
+                <div class="w-[32px] h-[32px] bg-[#D1FAE5] rounded-full flex items-center justify-center">
+                    <i class="fa fa-info-circle text-[#10B981]"></i>
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-[16px] font-medium mb-[4px]">认证说明</h2>
+                    <p class="text-[12px] text-[#4B5563]">完成校园认证后，你可以享受全部功能，包括兑换资料、发起交换和发布资料。</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 认证表单 -->
+        <div class="space-y-[16px] mt-[16px]">
+            <!-- 姓名输入 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">姓名</label>
+                <input type="text" placeholder="请输入真实姓名" class="input">
+            </div>
+            
+            <!-- 学号输入 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">学号</label>
+                <input type="text" placeholder="请输入学号" class="input">
+            </div>
+            
+            <!-- 学院选择 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">学院</label>
+                <select class="input">
+                    <option>请选择学院</option>
+                    <option>计算机科学与技术学院</option>
+                    <option>电子工程学院</option>
+                    <option>机械工程学院</option>
+                    <option>经济管理学院</option>
+                    <option>文学院</option>
+                    <option>理学院</option>
+                </select>
+            </div>
+            
+            <!-- 年级选择 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">年级</label>
+                <select class="input">
+                    <option>请选择年级</option>
+                    <option>2020级</option>
+                    <option>2021级</option>
+                    <option>2022级</option>
+                    <option>2023级</option>
+                    <option>2024级</option>
+                </select>
+            </div>
+            
+            <!-- 校园卡图片上传 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">校园卡图片</label>
+                <div class="w-full max-w-[343px] h-[150px] bg-[#F3F4F6] rounded-[8px] flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fa fa-id-card text-[#9CA3AF] text-[40px] mb-[8px]"></i>
+                        <p class="text-[12px] text-[#9CA3AF]">点击上传校园卡图片</p>
+                        <p class="text-[10px] text-[#9CA3AF]">支持 PNG、JPG 格式，清晰可见个人信息</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 隐私说明 -->
+        <div class="mt-[16px]">
+            <div class="flex items-center gap-[8px]">
+                <input type="checkbox" id="privacy" class="w-[20px] h-[20px] rounded-[4px] border border-[#D1D5DB] focus:ring-[#2563EB]">
+                <label for="privacy" class="text-[12px] text-[#4B5563]">
+                    我已阅读并同意 <a href="#" class="text-[#2563EB]">《隐私协议》</a> 和 <a href="#" class="text-[#2563EB]">《用户协议》</a>
+                </label>
+            </div>
+        </div>
+    </main>
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

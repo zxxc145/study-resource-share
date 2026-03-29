@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 首页</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部导航栏 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center">
+            <div class="w-[32px] h-[32px] bg-[#2563EB] rounded-full flex items-center justify-center">
+                <i class="fa fa-book text-white"></i>
+            </div>
+            <h1 class="ml-[8px] text-[18px] font-medium">智享书途</h1>
+        </div>
+        <div class="flex items-center gap-[16px]">
+            <button class="text-[#4B5563]">
+                <i class="fa fa-bell text-[20px]"></i>
+            </button>
+            <button class="text-[#4B5563]">
+                <i class="fa fa-search text-[20px]"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[60px] container mx-auto px-[16px]">
+        <!-- 轮播Banner -->
+        <div class="carousel mt-[16px] mb-[24px]">
+            <div class="w-full h-[160px] bg-[#2563EB] rounded-[12px] overflow-hidden relative flex items-center justify-center">
+                <!-- 轮播项1 -->
+                <div class="carousel-slide w-full h-full flex items-center justify-center">
+                    <span class="text-white text-[20px] font-medium">AI智能推荐学习资料</span>
+                </div>
+                
+                <!-- 轮播项2 -->
+                <div class="carousel-slide w-full h-full flex items-center justify-center hidden">
+                    <span class="text-white text-[20px] font-medium">考前冲刺资料包</span>
+                </div>
+                
+                <!-- 轮播项3 -->
+                <div class="carousel-slide w-full h-full flex items-center justify-center hidden">
+                    <span class="text-white text-[20px] font-medium">公益捐书活动</span>
+                </div>
+                
+                <!-- 轮播指示器 -->
+                <div class="absolute bottom-[12px] left-0 right-0 flex justify-center gap-[8px]">
+                    <div class="carousel-dot w-[8px] h-[8px] rounded-full bg-white"></div>
+                    <div class="carousel-dot w-[8px] h-[8px] rounded-full bg-gray-300"></div>
+                    <div class="carousel-dot w-[8px] h-[8px] rounded-full bg-gray-300"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 金刚位 -->
+        <div class="grid grid-cols-3 gap-[16px] mt-[24px]">
+            <a href="search.html" class="icon-grid-item cursor-pointer">
+                <div class="icon-grid-icon bg-[#EFF6FF]">
+                    <i class="fa fa-book text-[#2563EB]"></i>
+                </div>
+                <span class="text-[12px] mt-[8px]">教材课本</span>
+            </a>
+            <a href="search.html" class="icon-grid-item cursor-pointer">
+                <div class="icon-grid-icon bg-[#FEF3C7]">
+                    <i class="fa fa-file-alt text-[#F59E0B]"></i>
+                </div>
+                <span class="text-[12px] mt-[8px]">复习资料</span>
+            </a>
+            <a href="exchange.html" class="icon-grid-item cursor-pointer">
+                <div class="icon-grid-icon bg-[#D1FAE5]">
+                    <i class="fa fa-coins text-[#059669]"></i>
+                </div>
+                <span class="text-[12px] mt-[8px]">积分兑换</span>
+            </a>
+            <a href="exchange.html" class="icon-grid-item cursor-pointer">
+                <div class="icon-grid-icon bg-[#FEE2E2]">
+                    <i class="fa fa-exchange-alt text-[#DC2626]"></i>
+                </div>
+                <span class="text-[12px] mt-[8px]">以物换物</span>
+            </a>
+            <a href="exam.html" class="icon-grid-item cursor-pointer">
+                <div class="icon-grid-icon bg-[#E0E7FF]">
+                    <i class="fa fa-pen-fancy text-[#5B21B6]"></i>
+                </div>
+                <span class="text-[12px] mt-[8px]">备考专区</span>
+            </a>
+            <a href="profile.html" class="icon-grid-item cursor-pointer">
+                <div class="icon-grid-icon bg-[#F3E8FF]">
+                    <i class="fa fa-heart text-[#8B5CF6]"></i>
+                </div>
+                <span class="text-[12px] mt-[8px]">公益捐书</span>
+            </a>
+        </div>
+
+        <!-- AI推荐横向滚动卡片 -->
+        <div class="mt-[24px]">
+            <div class="flex items-center justify-between mb-[12px]">
+                <h2 class="text-[18px] font-medium">AI智能推荐</h2>
+                <a href="search-result.html" class="text-[#2563EB] text-[14px]">查看更多</a>
+            </div>
+            <div class="scroll-x flex gap-[16px]">
+                <!-- AI推荐卡片 -->
+                <a href="material-detail.html" class="card min-w-[200px] cursor-pointer">
+                    <div class="w-full h-[120px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                    <h3 class="text-[16px] font-medium mb-[4px]">人工智能导论</h3>
+                    <p class="text-[12px] text-[#9CA3AF] mb-[8px]">计算机科学与技术专业</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-star text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">4.9</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-coins text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">150积分</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- AI推荐卡片 -->
+                <a href="material-detail.html" class="card min-w-[200px] cursor-pointer">
+                    <div class="w-full h-[120px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                    <h3 class="text-[16px] font-medium mb-[4px]">高等数学上册</h3>
+                    <p class="text-[12px] text-[#9CA3AF] mb-[8px]">理工科专业通用</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-star text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">4.8</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-coins text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">120积分</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- AI推荐卡片 -->
+                <a href="material-detail.html" class="card min-w-[200px] cursor-pointer">
+                    <div class="w-full h-[120px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                    <h3 class="text-[16px] font-medium mb-[4px]">大学英语四级词汇</h3>
+                    <p class="text-[12px] text-[#9CA3AF] mb-[8px]">英语学习</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-star text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">4.7</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-coins text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">99积分</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 备考套餐两列卡片 -->
+        <div class="mt-[24px]">
+            <div class="flex items-center justify-between mb-[12px]">
+                <h2 class="text-[18px] font-medium">备考套餐</h2>
+                <a href="exam.html" class="text-[#2563EB] text-[14px]">查看更多</a>
+            </div>
+            <div class="grid grid-cols-2 gap-[16px]">
+                <!-- 套餐卡片 -->
+                <a href="package-detail.html" class="card cursor-pointer">
+                    <div class="w-full h-[100px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                    <h3 class="text-[16px] font-medium mb-[4px]">计算机考研套餐</h3>
+                    <p class="text-[12px] text-[#9CA3AF] mb-[8px]">包含15本专业教材</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-book text-[#2563EB]"></i>
+                            <span class="text-[12px] text-[#4B5563]">15本</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-coins text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">1299积分</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 套餐卡片 -->
+                <a href="package-detail.html" class="card cursor-pointer">
+                    <div class="w-full h-[100px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                    <h3 class="text-[16px] font-medium mb-[4px]">英语四六级套餐</h3>
+                    <p class="text-[12px] text-[#9CA3AF] mb-[8px]">包含8本学习资料</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-book text-[#2563EB]"></i>
+                            <span class="text-[12px] text-[#4B5563]">8本</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-coins text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">799积分</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 考前应急卡片 -->
+        <div class="mt-[24px]">
+            <div class="flex items-center justify-between mb-[12px]">
+                <h2 class="text-[18px] font-medium">考前应急专区</h2>
+                <a href="exam-emergency.html" class="text-[#2563EB] text-[14px]">查看更多</a>
+            </div>
+            <a href="exam-emergency.html" class="card cursor-pointer">
+                <div class="flex gap-[16px]">
+                    <div class="w-[80px] h-[80px] bg-[#FEE2E2] rounded-[8px] flex items-center justify-center">
+                        <i class="fa fa-clock text-[#EF4444] text-[32px]"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-[16px] font-medium mb-[4px]">期末考试突击包</h3>
+                        <p class="text-[12px] text-[#4B5563] mb-[8px]">包含各专业重点知识点、历年考试真题</p>
+                        <div class="flex items-center gap-[16px]">
+                            <div class="flex items-center gap-[4px]">
+                                <i class="fa fa-book text-[#2563EB]"></i>
+                                <span class="text-[12px] text-[#4B5563]">50+份</span>
+                            </div>
+                            <div class="flex items-center gap-[4px]">
+                                <i class="fa fa-fire text-[#F97316]"></i>
+                                <span class="text-[12px] text-[#4B5563]">1.2万次兑换</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- 互助交换模块 -->
+        <div class="mt-[24px]">
+            <div class="flex items-center justify-between mb-[12px]">
+                <h2 class="text-[18px] font-medium">互助交换</h2>
+                <a href="exchange.html" class="text-[#2563EB] text-[14px]">查看更多</a>
+            </div>
+            <a href="exchange.html" class="card cursor-pointer">
+                <div class="flex items-center justify-between mb-[12px]">
+                    <h3 class="text-[16px] font-medium">高等数学下册交换英语四级真题</h3>
+                    <span class="text-[#F97316] text-[12px]">以物换物</span>
+                </div>
+                <p class="text-[14px] text-[#4B5563] mb-[12px]">本人有高等数学下册教材，想交换英语四级真题集，有意者可联系。</p>
+                <div class="flex items-center gap-[16px]">
+                    <div class="flex items-center gap-[8px]">
+                        <div class="w-[24px] h-[24px] rounded-full bg-[#F3F4F6]"></div>
+                        <span class="text-[12px] text-[#4B5563]">李四</span>
+                    </div>
+                    <div class="flex items-center gap-[4px]">
+                        <i class="fa fa-clock text-[#9CA3AF]"></i>
+                        <span class="text-[12px] text-[#9CA3AF]">3小时前</span>
+                    </div>
+                    <button class="ml-auto text-[#2563EB] text-[14px]">立即交换</button>
+                </div>
+            </a>
+        </div>
+
+        <!-- 公益循环模块 -->
+        <div class="mt-[24px]">
+            <div class="flex items-center justify-between mb-[12px]">
+                <h2 class="text-[18px] font-medium">公益循环</h2>
+                <a href="profile.html" class="text-[#2563EB] text-[14px]">查看更多</a>
+            </div>
+            <a href="profile.html" class="card cursor-pointer">
+                <div class="flex gap-[16px]">
+                    <div class="w-[80px] h-[80px] bg-[#D1FAE5] rounded-[8px] flex items-center justify-center">
+                        <i class="fa fa-heart text-[#10B981] text-[32px]"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-[16px] font-medium mb-[4px]">图书公益捐赠</h3>
+                        <p class="text-[12px] text-[#4B5563] mb-[8px]">将闲置图书捐赠给需要的同学，传递知识的力量</p>
+                        <button class="btn-secondary max-w-[120px] h-[36px]">立即捐赠</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <!-- 底部Tab栏 -->
+    <footer>
+        <div class="tabbar">
+            <!-- 首页 -->
+            <div class="tabbar-item active" data-page="home">
+                <i class="fa fa-home text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">首页</span>
+            </div>
+            
+            <!-- 找资料 -->
+            <div class="tabbar-item inactive" data-page="search">
+                <i class="fa fa-search text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">找资料</span>
+            </div>
+            
+            <!-- 互助 -->
+            <div class="tabbar-item inactive" data-page="exchange">
+                <i class="fa fa-exchange-alt text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">互助</span>
+            </div>
+            
+            <!-- 备考 -->
+            <div class="tabbar-item inactive" data-page="exam">
+                <i class="fa fa-pen-fancy text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">备考</span>
+            </div>
+            
+            <!-- 我的 -->
+            <div class="tabbar-item inactive" data-page="profile">
+                <i class="fa fa-user text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">我的</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

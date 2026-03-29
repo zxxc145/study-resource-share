@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 网络异常</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen flex flex-col items-center justify-center px-[16px]">
+    <!-- 错误图标 -->
+    <div class="w-[120px] h-[120px] bg-[#FEE2E2] rounded-full flex items-center justify-center mb-[24px]">
+        <i class="fa fa-wifi-slash text-[#EF4444] text-[60px]"></i>
+    </div>
+    
+    <!-- 错误标题 -->
+    <h2 class="text-[24px] font-bold mb-[8px]">网络连接异常</h2>
+    
+    <!-- 错误描述 -->
+    <p class="text-[16px] text-[#4B5563] text-center mb-[32px]">请检查您的网络连接后重试</p>
+    
+    <!-- 操作按钮 -->
+    <div class="space-y-[12px]">
+        <button class="btn-primary" onclick="window.location.reload()">重新加载</button>
+        <button class="btn-secondary" onclick="window.location.href='home.html'">返回首页</button>
+    </div>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

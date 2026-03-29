@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 搜索结果</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部搜索栏 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center gap-[8px]">
+            <button class="back-btn">
+                <i class="fa fa-arrow-left text-[20px]"></i>
+            </button>
+            <div class="relative flex-1">
+                <input type="text" value="高等数学" class="w-full h-[36px] rounded-full bg-[#F3F4F6] pl-[40px] pr-[16px] text-[14px] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-opacity-50">
+                <i class="fa fa-search absolute left-[16px] top-1/2 transform -translate-y-1/2 text-[#9CA3AF]"></i>
+            </div>
+            <button class="text-[#4B5563]">
+                <i class="fa fa-filter text-[20px]"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[60px] container mx-auto px-[16px]">
+        <!-- 搜索结果统计 -->
+        <div class="py-[12px] border-b border-[#E5E7EB]">
+            <span class="text-[14px] text-[#4B5563]">共找到15条与"高等数学"相关的结果</span>
+        </div>
+        
+        <!-- 排序功能 -->
+        <div class="flex items-center justify-between py-[12px] border-b border-[#E5E7EB]">
+            <button class="text-[#4B5563] text-[14px]">
+                <i class="fa fa-list mr-[4px]"></i>
+                列表视图
+            </button>
+            <div class="flex items-center gap-[8px]">
+                <span class="text-[14px] text-[#4B5563]">排序</span>
+                <button class="text-[#2563EB] text-[14px]">
+                    <span>最新发布</span>
+                    <i class="fa fa-chevron-down ml-[4px]"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 搜索结果列表 -->
+        <div class="space-y-[16px] mt-[16px]">
+            <!-- 资料卡片1 -->
+            <div class="card">
+                <div class="w-full h-[150px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                <h3 class="text-[16px] font-medium mb-[4px]">高等数学下册习题详解</h3>
+                <p class="text-[12px] text-[#9CA3AF] mb-[8px]">发布于 2023-11-15 | 数学学习</p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[16px]">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-star text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">4.9</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-download text-[#2563EB]"></i>
+                            <span class="text-[12px] text-[#4B5563]">2189次</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[4px]">
+                        <i class="fa fa-coins text-[#F97316]"></i>
+                        <span class="text-[12px] text-[#4B5563]">150积分</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 资料卡片2 -->
+            <div class="card">
+                <div class="w-full h-[150px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                <h3 class="text-[16px] font-medium mb-[4px]">高等数学上册教材</h3>
+                <p class="text-[12px] text-[#9CA3AF] mb-[8px]">发布于 2023-11-10 | 数学学习</p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[16px]">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-star text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">4.8</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-download text-[#2563EB]"></i>
+                            <span class="text-[12px] text-[#4B5563]">1856次</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[4px]">
+                        <i class="fa fa-coins text-[#F97316]"></i>
+                        <span class="text-[12px] text-[#4B5563]">120积分</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 资料卡片3 -->
+            <div class="card">
+                <div class="w-full h-[150px] bg-[#F3F4F6] rounded-[8px] mb-[12px]"></div>
+                <h3 class="text-[16px] font-medium mb-[4px]">高等数学重点公式汇总</h3>
+                <p class="text-[12px] text-[#9CA3AF] mb-[8px]">发布于 2023-11-05 | 数学学习</p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[16px]">
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-star text-[#F97316]"></i>
+                            <span class="text-[12px] text-[#4B5563]">4.7</span>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <i class="fa fa-download text-[#2563EB]"></i>
+                            <span class="text-[12px] text-[#4B5563]">3256次</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[4px]">
+                        <i class="fa fa-coins text-[#F97316]"></i>
+                        <span class="text-[12px] text-[#4B5563]">49积分</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 空状态（当没有结果时显示） -->
+        <div class="hidden flex flex-col items-center justify-center pt-[80px]">
+            <div class="w-[120px] h-[120px] bg-[#F3F4F6] rounded-full flex items-center justify-center mb-[16px]">
+                <i class="fa fa-search text-[#9CA3AF] text-[60px]"></i>
+            </div>
+            <h3 class="text-[16px] font-medium mb-[8px]">暂无搜索结果</h3>
+            <p class="text-[14px] text-[#9CA3AF] mb-[24px]">请尝试使用其他关键词搜索</p>
+            <button class="btn-primary" onclick="window.location.href='search.html'">
+                返回找资料
+            </button>
+        </div>
+    </main>
+
+    <!-- 底部Tab栏 -->
+    <footer>
+        <div class="tabbar">
+            <!-- 首页 -->
+            <div class="tabbar-item inactive" data-page="home">
+                <i class="fa fa-home text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">首页</span>
+            </div>
+            
+            <!-- 找资料 -->
+            <div class="tabbar-item active" data-page="search">
+                <i class="fa fa-search text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">找资料</span>
+            </div>
+            
+            <!-- 互助 -->
+            <div class="tabbar-item inactive" data-page="exchange">
+                <i class="fa fa-exchange-alt text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">互助</span>
+            </div>
+            
+            <!-- 备考 -->
+            <div class="tabbar-item inactive" data-page="exam">
+                <i class="fa fa-pen-fancy text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">备考</span>
+            </div>
+            
+            <!-- 我的 -->
+            <div class="tabbar-item inactive" data-page="profile">
+                <i class="fa fa-user text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">我的</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

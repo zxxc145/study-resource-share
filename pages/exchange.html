@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 互助</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部导航栏 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center gap-[8px]">
+            <button class="back-btn">
+                <i class="fa fa-arrow-left text-[20px]"></i>
+            </button>
+            <h1 class="text-[18px] font-medium">互助交换</h1>
+        </div>
+        <button class="text-[#4B5563]">
+            <i class="fa fa-bell text-[20px]"></i>
+        </button>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[60px] container mx-auto px-[16px]">
+        <!-- 积分+信用状态栏 -->
+        <div class="card mt-[16px]">
+            <div class="flex items-center justify-between">
+                <div class="text-center">
+                    <div class="text-[12px] text-[#9CA3AF] mb-[4px]">我的积分</div>
+                    <div class="flex items-center justify-center">
+                        <i class="fa fa-coins text-[#F97316] mr-[4px]"></i>
+                        <span class="text-[20px] font-medium points-display">1250</span>
+                    </div>
+                </div>
+                <div class="w-[1px] h-[40px] bg-[#E5E7EB]"></div>
+                <div class="text-center">
+                    <div class="text-[12px] text-[#9CA3AF] mb-[4px]">信用等级</div>
+                    <div class="flex items-center justify-center">
+                        <i class="fa fa-star text-[#F59E0B] mr-[4px]"></i>
+                        <span class="text-[20px] font-medium">4.8</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 积分兑换 / 以物换物 / 我的记录 Tab切换 -->
+        <div class="mt-[16px]">
+            <div class="flex border-b border-[#E5E7EB]">
+                <button class="flex-1 py-[12px] text-center text-[16px] font-medium text-[#2563EB] border-b-2 border-[#2563EB]">积分兑换</button>
+                <button class="flex-1 py-[12px] text-center text-[16px] font-medium text-[#9CA3AF]">以物换物</button>
+                <button class="flex-1 py-[12px] text-center text-[16px] font-medium text-[#9CA3AF]">我的记录</button>
+            </div>
+        </div>
+
+        <!-- 积分兑换卡片流 -->
+        <div class="space-y-[16px] mt-[16px]">
+            <!-- 积分兑换卡片 -->
+            <div class="card">
+                <div class="flex gap-[12px]">
+                    <div class="w-[80px] h-[80px] bg-[#F3F4F6] rounded-[8px]"></div>
+                    <div class="flex-1">
+                        <h3 class="text-[16px] font-medium mb-[4px]">大学英语六级词汇</h3>
+                        <p class="text-[12px] text-[#9CA3AF] mb-[8px]">发布于 2023-11-10 | 英语学习</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[4px]">
+                                <i class="fa fa-coins text-[#F97316]"></i>
+                                <span class="text-[12px] text-[#4B5563]">150积分</span>
+                            </div>
+                            <button class="exchange-btn" data-points="150">立即兑换</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 积分兑换卡片 -->
+            <div class="card">
+                <div class="flex gap-[12px]">
+                    <div class="w-[80px] h-[80px] bg-[#F3F4F6] rounded-[8px]"></div>
+                    <div class="flex-1">
+                        <h3 class="text-[16px] font-medium mb-[4px]">高等数学下册习题详解</h3>
+                        <p class="text-[12px] text-[#9CA3AF] mb-[8px]">发布于 2023-11-05 | 数学学习</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[4px]">
+                                <i class="fa fa-coins text-[#F97316]"></i>
+                                <span class="text-[12px] text-[#4B5563]">120积分</span>
+                            </div>
+                            <button class="exchange-btn" data-points="120">立即兑换</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 积分兑换卡片 -->
+            <div class="card">
+                <div class="flex gap-[12px]">
+                    <div class="w-[80px] h-[80px] bg-[#F3F4F6] rounded-[8px]"></div>
+                    <div class="flex-1">
+                        <h3 class="text-[16px] font-medium mb-[4px]">计算机网络实验指导</h3>
+                        <p class="text-[12px] text-[#9CA3AF] mb-[8px]">发布于 2023-10-28 | 计算机科学</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[4px]">
+                                <i class="fa fa-coins text-[#F97316]"></i>
+                                <span class="text-[12px] text-[#4B5563]">99积分</span>
+                            </div>
+                            <button class="exchange-btn" data-points="99">立即兑换</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 右下角悬浮发布按钮 -->
+    <button class="publish-btn fixed bottom-[80px] right-[16px] w-[56px] h-[56px] rounded-full bg-[#2563EB] text-white shadow-lg flex items-center justify-center z-20">
+        <i class="fa fa-plus text-[24px]"></i>
+    </button>
+
+    <!-- 底部Tab栏 -->
+    <footer>
+        <div class="tabbar">
+            <!-- 首页 -->
+            <div class="tabbar-item inactive" data-page="home">
+                <i class="fa fa-home text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">首页</span>
+            </div>
+            
+            <!-- 找资料 -->
+            <div class="tabbar-item inactive" data-page="search">
+                <i class="fa fa-search text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">找资料</span>
+            </div>
+            
+            <!-- 互助 -->
+            <div class="tabbar-item active" data-page="exchange">
+                <i class="fa fa-exchange-alt text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">互助</span>
+            </div>
+            
+            <!-- 备考 -->
+            <div class="tabbar-item inactive" data-page="exam">
+                <i class="fa fa-pen-fancy text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">备考</span>
+            </div>
+            
+            <!-- 我的 -->
+            <div class="tabbar-item inactive" data-page="profile">
+                <i class="fa fa-user text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">我的</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

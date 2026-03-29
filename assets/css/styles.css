@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局样式配置 */
+@layer base {
+  html {
+    font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Microsoft YaHei", sans-serif;
+    color: #1F2937;
+    background-color: #F3F4F6;
+  }
+  
+  /* 英文/数字字体 */
+  .font-en {
+    font-family: 'SF Pro Display', Inter, Roboto, sans-serif;
+  }
+  
+  /* 基础色值 */
+  :root {
+    --primary: #2563EB;
+    --secondary-1: #F97316;
+    --secondary-2: #10B981;
+    --text-primary: #1F2937;
+    --text-secondary: #4B5563;
+    --text-tertiary: #9CA3AF;
+    --bg-primary: #F3F4F6;
+    --border: #E5E7EB;
+  }
+  
+  /* 按钮样式 */
+  .btn-primary {
+    @apply w-full max-w-[343px] h-[48px] rounded-[8px] bg-[#2563EB] text-white font-medium hover:shadow-md transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply w-full max-w-[343px] h-[48px] rounded-[8px] border border-[#2563EB] bg-white text-[#2563EB] font-medium hover:shadow-sm transition-all duration-200;
+  }
+  
+  /* 卡片样式 */
+  .card {
+    @apply w-full max-w-[343px] p-[16px] rounded-[12px] bg-white shadow-[0_2px_8px_rgba(0,0,0,0.05)];
+  }
+  
+  /* 输入框样式 */
+  .input {
+    @apply w-full max-w-[343px] h-[48px] rounded-[8px] bg-[#F3F4F6] px-[16px] text-[#4B5563] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-opacity-50;
+  }
+  
+  /* 金刚位图标 */
+  .icon-grid-item {
+    @apply flex flex-col items-center;
+  }
+  
+  .icon-grid-icon {
+    @apply w-[48px] h-[48px] rounded-full flex items-center justify-center;
+  }
+  
+  /* 底部Tab栏 */
+  .tabbar {
+    @apply fixed bottom-0 left-0 right-0 h-[60px] bg-white border-t border-[#E5E7EB] flex items-center justify-around;
+  }
+  
+  .tabbar-item {
+    @apply flex flex-col items-center justify-center flex-1;
+  }
+  
+  .tabbar-item.active {
+    @apply text-[#2563EB];
+  }
+  
+  .tabbar-item.inactive {
+    @apply text-[#9CA3AF];
+  }
+  
+  /* 弹窗遮罩 */
+  .modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+  }
+  
+  /* 弹窗容器 */
+  .modal-container {
+    @apply bg-white rounded-[12px] w-[90%] max-w-[343px] max-h-[80vh] overflow-y-auto;
+  }
+  
+  /* 页面过渡动画 */
+    .page-transition {
+        @apply transition-all duration-300 ease-in-out;
+    }
+    
+    /* 轮播图样式 */
+    .carousel-slide {
+        @apply w-full h-full;
+    }
+}
+
+/* 响应式设计 */
+@media (min-width: 768px) {
+  .container {
+    @apply max-w-[768px] mx-auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply max-w-[1024px] mx-auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    @apply max-w-[1200px] mx-auto;
+  }
+}
+
+/* 横向滚动 */
+.scroll-x {
+  @apply overflow-x-auto overflow-y-hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
+/* 安全区适配 */
+.safe-top {
+  @apply pt-[44px];
+}
+
+.safe-bottom {
+  @apply pb-[34px];
+}
+
+/* 防止底部Tab栏遮挡内容 */
+.content-with-tabbar {
+  @apply pb-[60px];
+}

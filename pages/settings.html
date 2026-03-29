@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 设置</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部导航栏 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center gap-[8px]">
+            <button class="back-btn">
+                <i class="fa fa-arrow-left text-[20px]"></i>
+            </button>
+            <h1 class="text-[18px] font-medium">设置</h1>
+        </div>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[60px] container mx-auto px-[16px]">
+        <!-- 账户设置 -->
+        <div class="space-y-[1px] mt-[16px]">
+            <div class="bg-white p-[16px]">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#EFF6FF] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-user text-[#2563EB]"></i>
+                        </div>
+                        <span class="text-[16px]">账户设置</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+            </div>
+            
+            <div class="bg-white p-[16px]">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#D1FAE5] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-lock text-[#10B981]"></i>
+                        </div>
+                        <span class="text-[16px]">隐私设置</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+            </div>
+            
+            <div class="bg-white p-[16px]">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#FEF3C7] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-bell text-[#F59E0B]"></i>
+                        </div>
+                        <span class="text-[16px]">通知设置</span>
+                    </div>
+                    <div class="relative inline-block w-[40px] h-[20px]">
+                        <input type="checkbox" id="toggle" class="sr-only" checked>
+                        <label for="toggle" class="block w-full h-full bg-[#E5E7EB] rounded-full cursor-pointer transition-all duration-200"></label>
+                        <span class="absolute left-[2px] top-[2px] w-[16px] h-[16px] bg-white rounded-full transition-all duration-200 transform"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 关于我们 -->
+        <div class="space-y-[1px] mt-[24px]">
+            <div class="bg-white p-[16px]">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#FEE2E2] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-info-circle text-[#EF4444]"></i>
+                        </div>
+                        <span class="text-[16px]">关于我们</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+            </div>
+            
+            <div class="bg-white p-[16px]">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#E0E7FF] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-file-alt text-[#5B21B6]"></i>
+                        </div>
+                        <span class="text-[16px]">用户协议</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+            </div>
+            
+            <div class="bg-white p-[16px]">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#F3E8FF] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-shield-alt text-[#8B5CF6]"></i>
+                        </div>
+                        <span class="text-[16px]">隐私政策</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+            </div>
+            
+            <div class="bg-white p-[16px]">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#FEE2E2] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-headset text-[#DC2626]"></i>
+                        </div>
+                        <span class="text-[16px]">联系客服</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+            </div>
+            
+            <div class="bg-white p-[16px]">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#F3F4F6] rounded-[8px] flex items-center justify-center">
+                            <i class="fa fa-star text-[#4B5563]"></i>
+                        </div>
+                        <span class="text-[16px]">给我们评分</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 清除缓存 -->
+        <div class="bg-white p-[16px] mt-[24px]">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-[12px]">
+                    <div class="w-[32px] h-[32px] bg-[#FEF3C7] rounded-[8px] flex items-center justify-center">
+                        <i class="fa fa-trash text-[#F59E0B]"></i>
+                    </div>
+                    <span class="text-[16px]">清除缓存</span>
+                </div>
+                <span class="text-[14px] text-[#9CA3AF]">12.3MB</span>
+            </div>
+        </div>
+        
+        <!-- 版本信息 -->
+        <div class="text-center mt-[48px]">
+            <p class="text-[14px] text-[#9CA3AF]">版本 1.0.0</p>
+            <p class="text-[12px] text-[#9CA3AF] mt-[4px]">© 2023 智享书途</p>
+        </div>
+    </main>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

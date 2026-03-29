@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 我的云资料</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部导航栏 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center gap-[8px]">
+            <button class="back-btn">
+                <i class="fa fa-arrow-left text-[20px]"></i>
+            </button>
+            <h1 class="text-[18px] font-medium">我的云资料</h1>
+        </div>
+        <button class="text-[#4B5563]">
+            <i class="fa fa-download text-[20px]"></i>
+        </button>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[60px] container mx-auto px-[16px]">
+        <!-- Tab切换 -->
+        <div class="flex border-b border-[#E5E7EB] mt-[16px]">
+            <button class="flex-1 py-[12px] text-center text-[16px] font-medium text-[#2563EB] border-b-2 border-[#2563EB]">已兑换</button>
+            <button class="flex-1 py-[12px] text-center text-[16px] font-medium text-[#9CA3AF]">已上传</button>
+        </div>
+        
+        <!-- 已兑换资料列表 -->
+        <div class="space-y-[16px] mt-[16px]">
+            <!-- 资料项1 -->
+            <div class="card">
+                <div class="flex gap-[12px]">
+                    <div class="w-[80px] h-[80px] bg-[#F3F4F6] rounded-[8px]"></div>
+                    <div class="flex-1">
+                        <h3 class="text-[16px] font-medium mb-[4px]">大学英语四级考试真题集</h3>
+                        <p class="text-[12px] text-[#9CA3AF] mb-[8px]">兑换于 2023-11-20</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[4px]">
+                                <i class="fa fa-coins text-[#F97316]"></i>
+                                <span class="text-[12px] text-[#4B5563]">150积分</span>
+                            </div>
+                            <button class="text-[#2563EB] text-[14px]">
+                                <i class="fa fa-download mr-[4px]"></i>
+                                下载
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 资料项2 -->
+            <div class="card">
+                <div class="flex gap-[12px]">
+                    <div class="w-[80px] h-[80px] bg-[#F3F4F6] rounded-[8px]"></div>
+                    <div class="flex-1">
+                        <h3 class="text-[16px] font-medium mb-[4px]">高等数学下册习题详解</h3>
+                        <p class="text-[12px] text-[#9CA3AF] mb-[8px]">兑换于 2023-11-15</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[4px]">
+                                <i class="fa fa-coins text-[#F97316]"></i>
+                                <span class="text-[12px] text-[#4B5563]">120积分</span>
+                            </div>
+                            <button class="text-[#2563EB] text-[14px]">
+                                <i class="fa fa-download mr-[4px]"></i>
+                                下载
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 资料项3 -->
+            <div class="card">
+                <div class="flex gap-[12px]">
+                    <div class="w-[80px] h-[80px] bg-[#F3F4F6] rounded-[8px]"></div>
+                    <div class="flex-1">
+                        <h3 class="text-[16px] font-medium mb-[4px]">计算机网络实验指导</h3>
+                        <p class="text-[12px] text-[#9CA3AF] mb-[8px]">兑换于 2023-11-10</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[4px]">
+                                <i class="fa fa-coins text-[#F97316]"></i>
+                                <span class="text-[12px] text-[#4B5563]">99积分</span>
+                            </div>
+                            <button class="text-[#2563EB] text-[14px]">
+                                <i class="fa fa-download mr-[4px]"></i>
+                                下载
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 空状态（当没有资料时显示） -->
+        <div class="hidden flex flex-col items-center justify-center pt-[80px]">
+            <div class="w-[120px] h-[120px] bg-[#F3F4F6] rounded-full flex items-center justify-center mb-[16px]">
+                <i class="fa fa-cloud text-[#9CA3AF] text-[60px]"></i>
+            </div>
+            <h3 class="text-[16px] font-medium mb-[8px]">暂无资料</h3>
+            <p class="text-[14px] text-[#9CA3AF] mb-[24px]">快去兑换或上传你的第一份资料吧</p>
+            <button class="btn-primary" onclick="window.location.href='search.html'">
+                去兑换资料
+            </button>
+        </div>
+    </main>
+
+    <!-- 底部Tab栏 -->
+    <footer>
+        <div class="tabbar">
+            <!-- 首页 -->
+            <div class="tabbar-item inactive" data-page="home">
+                <i class="fa fa-home text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">首页</span>
+            </div>
+            
+            <!-- 找资料 -->
+            <div class="tabbar-item inactive" data-page="search">
+                <i class="fa fa-search text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">找资料</span>
+            </div>
+            
+            <!-- 互助 -->
+            <div class="tabbar-item inactive" data-page="exchange">
+                <i class="fa fa-exchange-alt text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">互助</span>
+            </div>
+            
+            <!-- 备考 -->
+            <div class="tabbar-item inactive" data-page="exam">
+                <i class="fa fa-pen-fancy text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">备考</span>
+            </div>
+            
+            <!-- 我的 -->
+            <div class="tabbar-item active" data-page="profile">
+                <i class="fa fa-user text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">我的</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

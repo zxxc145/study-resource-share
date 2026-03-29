@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 个人信息编辑</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部导航栏 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center gap-[8px]">
+            <button class="back-btn">
+                <i class="fa fa-arrow-left text-[20px]"></i>
+            </button>
+            <h1 class="text-[18px] font-medium">编辑个人信息</h1>
+        </div>
+        <button class="text-[#2563EB] text-[16px] font-medium">保存</button>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[60px] container mx-auto px-[16px]">
+        <!-- 头像上传 -->
+        <div class="flex flex-col items-center mb-[24px]">
+            <div class="w-[80px] h-[80px] bg-white rounded-full overflow-hidden mb-[12px]">
+                <!-- 默认头像 -->
+                <div class="w-full h-full bg-[#F3F4F6] flex items-center justify-center">
+                    <i class="fa fa-user text-[40px] text-[#9CA3AF]"></i>
+                </div>
+            </div>
+            <button class="text-[#2563EB] text-[14px]">
+                上传头像
+            </button>
+        </div>
+        
+        <!-- 个人信息表单 -->
+        <div class="space-y-[16px]">
+            <!-- 姓名输入 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">姓名</label>
+                <input type="text" value="张三" class="input">
+            </div>
+            
+            <!-- 学号输入 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">学号</label>
+                <input type="text" value="2021010101" class="input">
+            </div>
+            
+            <!-- 学院选择 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">学院</label>
+                <select class="input">
+                    <option>计算机科学与技术学院</option>
+                    <option>电子工程学院</option>
+                    <option>机械工程学院</option>
+                    <option>经济管理学院</option>
+                    <option>文学院</option>
+                    <option>理学院</option>
+                </select>
+            </div>
+            
+            <!-- 年级选择 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">年级</label>
+                <select class="input">
+                    <option>2021级</option>
+                    <option>2020级</option>
+                    <option>2022级</option>
+                    <option>2023级</option>
+                    <option>2024级</option>
+                </select>
+            </div>
+            
+            <!-- 专业输入 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">专业</label>
+                <input type="text" value="计算机科学与技术" class="input">
+            </div>
+            
+            <!-- 联系方式输入 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">联系方式</label>
+                <input type="text" value="13800138000" class="input">
+            </div>
+            
+            <!-- 个人简介输入 -->
+            <div>
+                <label class="block text-[14px] text-[#4B5563] mb-[4px]">个人简介</label>
+                <textarea class="w-full max-w-[343px] h-[100px] rounded-[8px] bg-[#F3F4F6] px-[16px] py-[12px] text-[#4B5563] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-opacity-50 resize-none">
+我是一名计算机科学与技术专业的学生，喜欢编程和阅读。
+                </textarea>
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部Tab栏 -->
+    <footer>
+        <div class="tabbar">
+            <!-- 首页 -->
+            <div class="tabbar-item inactive" data-page="home">
+                <i class="fa fa-home text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">首页</span>
+            </div>
+            
+            <!-- 找资料 -->
+            <div class="tabbar-item inactive" data-page="search">
+                <i class="fa fa-search text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">找资料</span>
+            </div>
+            
+            <!-- 互助 -->
+            <div class="tabbar-item inactive" data-page="exchange">
+                <i class="fa fa-exchange-alt text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">互助</span>
+            </div>
+            
+            <!-- 备考 -->
+            <div class="tabbar-item inactive" data-page="exam">
+                <i class="fa fa-pen-fancy text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">备考</span>
+            </div>
+            
+            <!-- 我的 -->
+            <div class="tabbar-item active" data-page="profile">
+                <i class="fa fa-user text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">我的</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 我的</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部导航栏 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center gap-[8px]">
+            <button class="back-btn">
+                <i class="fa fa-arrow-left text-[20px]"></i>
+            </button>
+            <h1 class="text-[18px] font-medium">我的</h1>
+        </div>
+        <button class="text-[#4B5563]">
+            <i class="fa fa-cog text-[20px]"></i>
+        </button>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[60px] container mx-auto px-[16px]">
+        <!-- 个人信息栏 -->
+        <div class="card mt-[16px]">
+            <div class="flex items-center gap-[16px]">
+                <div class="w-[80px] h-[80px] bg-[#F3F4F6] rounded-full overflow-hidden">
+                    <!-- 用户头像 -->
+                </div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-[8px]">
+                        <h2 class="text-[18px] font-medium">张三</h2>
+                        <span class="text-[12px] px-[6px] py-[2px] bg-[#D1FAE5] text-[#10B981] rounded-full">未认证</span>
+                    </div>
+                    <p class="text-[14px] text-[#4B5563] mt-[4px]">计算机科学与技术学院</p>
+                    <p class="text-[12px] text-[#9CA3AF] mt-[2px]">2021级</p>
+                </div>
+                <button class="text-[#2563EB] text-[14px] flex items-center gap-[4px]">
+                    <span>编辑</span>
+                    <i class="fa fa-edit"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- 数据概览 -->
+        <div class="card mt-[12px]">
+            <div class="grid grid-cols-4 gap-[8px]">
+                <div class="text-center">
+                    <div class="text-[18px] font-medium points-display">1250</div>
+                    <div class="text-[12px] text-[#9CA3AF] mt-[4px]">我的积分</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-[18px] font-medium">15</div>
+                    <div class="text-[12px] text-[#9CA3AF] mt-[4px]">我发布的</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-[18px] font-medium">28</div>
+                    <div class="text-[12px] text-[#9CA3AF] mt-[4px]">我收藏的</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-[18px] font-medium">45</div>
+                    <div class="text-[12px] text-[#9CA3AF] mt-[4px]">我兑换的</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 功能入口列表 -->
+        <div class="card mt-[12px]">
+            <div class="space-y-[16px]">
+                <!-- 功能入口项 -->
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#EFF6FF] rounded-full flex items-center justify-center">
+                            <i class="fa fa-book text-[#2563EB]"></i>
+                        </div>
+                        <span class="text-[16px]">我的云资料</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#FEF3C7] rounded-full flex items-center justify-center">
+                            <i class="fa fa-exchange-alt text-[#F59E0B]"></i>
+                        </div>
+                        <span class="text-[16px]">交换请求管理</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#D1FAE5] rounded-full flex items-center justify-center">
+                            <i class="fa fa-coins text-[#059669]"></i>
+                        </div>
+                        <span class="text-[16px]">赚积分任务中心</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#FEE2E2] rounded-full flex items-center justify-center">
+                            <i class="fa fa-heart text-[#DC2626]"></i>
+                        </div>
+                        <span class="text-[16px]">我的收藏</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#E0E7FF] rounded-full flex items-center justify-center">
+                            <i class="fa fa-comment text-[#5B21B6]"></i>
+                        </div>
+                        <span class="text-[16px]">我的评论</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[12px]">
+                        <div class="w-[32px] h-[32px] bg-[#F3E8FF] rounded-full flex items-center justify-center">
+                            <i class="fa fa-gift text-[#8B5CF6]"></i>
+                        </div>
+                        <span class="text-[16px]">我的礼品</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- 校园认证入口 -->
+        <div class="card mt-[12px]">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-[12px]">
+                    <div class="w-[32px] h-[32px] bg-[#D1FAE5] rounded-full flex items-center justify-center">
+                        <i class="fa fa-id-card text-[#10B981]"></i>
+                    </div>
+                    <div>
+                        <div class="text-[16px] font-medium">校园认证</div>
+                        <div class="text-[12px] text-[#9CA3AF] mt-[2px]">认证后可享受全部功能</div>
+                    </div>
+                </div>
+                <button class="verify-btn px-[12px] py-[4px] bg-[#2563EB] text-white text-[12px] rounded-full">
+                    去认证
+                </button>
+            </div>
+        </div>
+
+        <!-- 设置入口 -->
+        <div class="card mt-[12px]">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-[12px]">
+                    <div class="w-[32px] h-[32px] bg-[#F3F4F6] rounded-full flex items-center justify-center">
+                        <i class="fa fa-cog text-[#4B5563]"></i>
+                    </div>
+                    <span class="text-[16px]">设置/关于我们</span>
+                </div>
+                <i class="fa fa-chevron-right text-[#9CA3AF]"></i>
+            </div>
+        </div>
+
+        <!-- 版本信息 -->
+        <div class="text-center mt-[24px]">
+            <p class="text-[12px] text-[#9CA3AF]">版本 1.0.0</p>
+            <p class="text-[12px] text-[#9CA3AF] mt-[2px]">© 2023 智享书途</p>
+        </div>
+    </main>
+
+    <!-- 底部Tab栏 -->
+    <footer>
+        <div class="tabbar">
+            <!-- 首页 -->
+            <div class="tabbar-item inactive" data-page="home">
+                <i class="fa fa-home text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">首页</span>
+            </div>
+            
+            <!-- 找资料 -->
+            <div class="tabbar-item inactive" data-page="search">
+                <i class="fa fa-search text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">找资料</span>
+            </div>
+            
+            <!-- 互助 -->
+            <div class="tabbar-item inactive" data-page="exchange">
+                <i class="fa fa-exchange-alt text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">互助</span>
+            </div>
+            
+            <!-- 备考 -->
+            <div class="tabbar-item inactive" data-page="exam">
+                <i class="fa fa-pen-fancy text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">备考</span>
+            </div>
+            
+            <!-- 我的 -->
+            <div class="tabbar-item active" data-page="profile">
+                <i class="fa fa-user text-[20px]"></i>
+                <span class="text-[12px] mt-[2px]">我的</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智享书途 - 学习套餐详情</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-[#F3F4F6] min-h-screen">
+    <!-- 顶部返回导航 -->
+    <header class="fixed top-0 left-0 right-0 h-[60px] bg-white shadow-sm z-10 flex items-center justify-between px-[16px]">
+        <div class="flex items-center gap-[8px]">
+            <button class="back-btn">
+                <i class="fa fa-arrow-left text-[20px]"></i>
+            </button>
+            <h1 class="text-[18px] font-medium">学习套餐详情</h1>
+        </div>
+        <button class="text-[#4B5563]">
+            <i class="fa fa-share-alt text-[20px]"></i>
+        </button>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="pt-[60px] pb-[100px] container mx-auto px-[16px]">
+        <!-- 套餐封面图 -->
+        <div class="w-full h-[200px] bg-[#F3F4F6] rounded-[12px] mt-[16px]"></div>
+        
+        <!-- 套餐标题/标签/价格 -->
+        <div class="mt-[16px]">
+            <h2 class="text-[20px] font-bold mb-[8px]">计算机科学与技术专业套餐</h2>
+            <div class="flex items-center gap-[8px] mb-[12px]">
+                <span class="px-[8px] py-[2px] bg-[#EFF6FF] text-[#2563EB] text-[12px] rounded-full">计算机科学</span>
+                <span class="px-[8px] py-[2px] bg-[#F3E8FF] text-[#8B5CF6] text-[12px] rounded-full">专业教材</span>
+            </div>
+            <div class="flex items-center gap-[16px]">
+                <div class="flex items-center">
+                    <i class="fa fa-coins text-[#F97316] text-[24px]"></i>
+                    <span class="ml-[4px] text-[24px] font-bold">899</span>
+                </div>
+                <span class="text-[12px] text-[#9CA3AF] line-through">原价：1299积分</span>
+            </div>
+        </div>
+        
+        <!-- 套餐介绍 -->
+        <div class="mt-[24px]">
+            <h3 class="text-[18px] font-medium mb-[12px]">套餐介绍</h3>
+            <div class="bg-white p-[16px] rounded-[12px]">
+                <p class="text-[14px] text-[#4B5563] leading-[20px]">
+                    本套餐包含计算机科学与技术专业10本核心教材，涵盖数据结构、算法设计与分析、计算机组成原理、操作系统、计算机网络等重要课程。
+                    所有教材均为最新版本，内容详实，适合计算机专业学生系统学习。
+                </p>
+            </div>
+        </div>
+        
+        <!-- 包含资料列表 -->
+        <div class="mt-[24px]">
+            <h3 class="text-[18px] font-medium mb-[12px]">包含资料</h3>
+            <div class="bg-white rounded-[12px] overflow-hidden">
+                <!-- 资料项1 -->
+                <div class="flex items-center gap-[12px] p-[16px] border-b border-[#E5E7EB]">
+                    <div class="w-[40px] h-[40px] bg-[#F3F4F6] rounded-[8px]"></div>
+                    <div class="flex-1">
+                        <h4 class="text-[16px] font-medium">数据结构</h4>
+                        <p class="text-[12px] text-[#9CA3AF]">严蔚敏 编著</p>
+                    </div>
+                    <span class="text-[12px] text-[#9CA3AF]">单独购买：159积分</span>
+                </div>
+                
+                <!-- 资料项2 -->
+                <div class="flex items-center gap-[12px] p-[16px] border-b border-[#E5E7EB]">
+                    <div class="w-[40px] h-[40px] bg-[#F3F4F6] rounded-[8px]"></div>
+                    <div class="flex-1">
+                        <h4 class="text-[16px] font-medium">算法设计与分析</h4>
+                        <p class="text-[12px] text-[#9CA3AF]">王晓东 编著</p>
+                    </div>
+                    <span class="text-[12px] text-[#9CA3AF]">单独购买：139积分</span>
+                </div>
+                
+                <!-- 资料项3 -->
+                <div class="flex items-center gap-[12px] p-[16px] border-b border-[#E5E7EB]">
+                    <div class="w-[40px] h-[40px] bg-[#F3F4F6] rounded-[8px]"></div>
+                    <div class="flex-1">
+                        <h4 class="text-[16px] font-medium">计算机组成原理</h4>
+                        <p class="text-[12px] text-[#9CA3AF]">唐朔飞 编著</p>
+                    </div>
+                    <span class="text-[12px] text-[#9CA3AF]">单独购买：149积分</span>
+                </div>
+                
+                <!-- 资料项4 -->
+                <div class="flex items-center gap-[12px] p-[16px] border-b border-[#E5E7EB]">
+                    <div class="w-[40px] h-[40px] bg-[#F3F4F6] rounded-[8px]"></div>
+                    <div class="flex-1">
+                        <h4 class="text-[16px] font-medium">操作系统</h4>
+                        <p class="text-[12px] text-[#9CA3AF]">汤子瀛 编著</p>
+                    </div>
+                    <span class="text-[12px] text-[#9CA3AF]">单独购买：159积分</span>
+                </div>
+                
+                <!-- 资料项5 -->
+                <div class="flex items-center gap-[12px] p-[16px]">
+                    <div class="w-[40px] h-[40px] bg-[#F3F4F6] rounded-[8px]"></div>
+                    <div class="flex-1">
+                        <h4 class="text-[16px] font-medium">计算机网络</h4>
+                        <p class="text-[12px] text-[#9CA3AF]">谢希仁 编著</p>
+                    </div>
+                    <span class="text-[12px] text-[#9CA3AF]">单独购买：149积分</span>
+                </div>
+                
+                <!-- 查看更多 -->
+                <div class="text-center py-[12px]">
+                    <button class="text-[#2563EB] text-[14px]">
+                        查看全部10本资料
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部固定操作栏 -->
+    <div class="fixed bottom-0 left-0 right-0 h-[80px] bg-white border-t border-[#E5E7EB] flex items-center justify-between px-[16px] z-10">
+        <div class="flex items-center gap-[12px]">
+            <div class="text-center">
+                <div class="text-[12px] text-[#9CA3AF]">所需积分</div>
+                <div class="flex items-center justify-center">
+                    <i class="fa fa-coins text-[#F97316] mr-[4px]"></i>
+                    <span class="text-[18px] font-medium">899</span>
+                </div>
+            </div>
+            <div class="flex-1">
+                <button class="btn-primary w-full exchange-btn" data-points="899">
+                    立即兑换
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局JavaScript -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>
